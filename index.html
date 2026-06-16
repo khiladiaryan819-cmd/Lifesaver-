@@ -3,313 +3,124 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lifesaver | Save Lives Through Donation</title>
 
-<title>LifeSaver - Blood Donation</title>
-
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<!-- AOS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
+
 <body>
 
-<!-- Header -->
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">❤️ Lifesaver</div>
 
-<header>
+  <nav>
+    <button id="themeToggle" class="btn">🌙</button>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#impact">Impact</a>
+    <a href="donate.html">Donate</a>
+  </nav>
 
-<div class="logo">
-
-<h1>LifeSaver</h1>
-
-</div>
-
-<nav>
-
-<a href="index.html">Home</a>
-
-<a href="about.html">About</a>
-
-<a href="services.html">Services</a>
-
-<a href="donors.html">Donors</a>
-
-<a href="contact.html">Contact</a>
-
-</nav>
-
+  <a href="donate.html" class="btn">Join Now</a>
 </header>
 
-<!-- Hero Section -->
+<!-- HERO -->
+<section class="hero" id="home">
 
-<section class="hero">
+  <div class="hero-text" data-aos="fade-right">
+    <h1>Donate Blood<br>Save Lives ❤️</h1>
+    <p>Join our mission to connect donors with people in need and save lives instantly.</p>
 
-<div class="hero-text">
+    <div class="hero-buttons">
+      <a href="donate.html" class="btn-main">Donate Now</a>
+      <a href="#impact" class="btn-outline">See Impact</a>
+    </div>
 
-<h2>
-Donate Blood <br>
-Save Lives
-</h2>
+    <div class="stats">
+      <div><h2 class="counter" data-target="15000">0</h2><p>Donations</p></div>
+      <div><h2 class="counter" data-target="8000">0</h2><p>Lives Saved</p></div>
+      <div><h2 class="counter" data-target="200">0</h2><p>Cities</p></div>
+    </div>
+  </div>
 
-<p>
-Every drop of blood can save a life.
-Join LifeSaver and become a hero today.
-</p>
-
-<button class="donor-btn">
-
-Become a Donor
-
-</button>
-
-<button class="request-btn">
-
-Request Blood
-
-</button>
-
-</div>
+  <div class="hero-img" data-aos="fade-left">
+    <img src="https://images.unsplash.com/photo-1615461066841-6116e61058f4?auto=format&fit=crop&w=900&q=80">
+  </div>
 
 </section>
 
-<!-- Statistics -->
+<!-- ABOUT -->
+<section class="about" id="about" data-aos="fade-up">
 
-<section class="stats">
-
-<div class="card">
-
-<i class="fa-solid fa-users"></i>
-
-<h3>5000+</h3>
-
-<p>Registered Donors</p>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-heart"></i>
-
-<h3>1200+</h3>
-
-<p>Lives Saved</p>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-truck-medical"></i>
-
-<h3>24×7</h3>
-
-<p>Emergency Support</p>
-
-</div>
+  <h2>Why Lifesaver?</h2>
+  <p>We connect verified blood donors with hospitals and patients in real time using smart matching technology.</p>
 
 </section>
 
-<!-- Blood Groups -->
+<!-- SERVICES -->
+<section class="services">
 
-<section class="blood-groups">
+  <div class="card" data-aos="zoom-in">
+    <h3>🩸 Safe Process</h3>
+    <p>Medical verified donation system.</p>
+  </div>
 
-<h2>Available Blood Groups</h2>
+  <div class="card" data-aos="zoom-in" data-aos-delay="100">
+    <h3>⚡ Fast Match</h3>
+    <p>Instant donor matching system.</p>
+  </div>
 
-<div class="blood-container">
-
-<div class="blood-card">A+</div>
-
-<div class="blood-card">A-</div>
-
-<div class="blood-card">B+</div>
-
-<div class="blood-card">B-</div>
-
-<div class="blood-card">AB+</div>
-
-<div class="blood-card">AB-</div>
-
-<div class="blood-card">O+</div>
-
-<div class="blood-card">O-</div>
-
-</div>
+  <div class="card" data-aos="zoom-in" data-aos-delay="200">
+    <h3>🏥 Trusted Network</h3>
+    <p>Connected with hospitals nationwide.</p>
+  </div>
 
 </section>
 
-<!-- Search -->
+<!-- IMPACT -->
+<section class="impact" id="impact">
 
-<section class="search-section">
+  <h2 data-aos="fade-up">Our Global Impact</h2>
 
-<h2>Find Blood Donors</h2>
+  <div class="impact-grid">
 
-<input type="text"
-placeholder="Enter Blood Group">
+    <div class="impact-card" data-aos="zoom-in">
+      <h1 class="counter" data-target="15000">0</h1>
+      <p>Blood Units Collected</p>
+    </div>
 
-<button>
+    <div class="impact-card" data-aos="zoom-in" data-aos-delay="100">
+      <h1 class="counter" data-target="8000">0</h1>
+      <p>Lives Saved</p>
+    </div>
 
-Search
+    <div class="impact-card" data-aos="zoom-in" data-aos-delay="200">
+      <h1 class="counter" data-target="500">0</h1>
+      <p>Hospitals Connected</p>
+    </div>
 
-</button>
-
-</section>
-
-<!-- Emergency -->
-
-<section class="emergency">
-
-<h2>
-Need Blood Urgently?
-</h2>
-
-<p>
-
-Our team is available 24×7 to help you.
-
-</p>
-
-<button>
-
-Emergency Request
-
-</button>
+  </div>
 
 </section>
 
-<!-- Testimonials -->
-
-<section class="testimonial">
-
-<h2>
-
-What People Say
-
-</h2>
-
-<div class="testimonial-box">
-
-<h3>
-
-Rahul Sharma
-
-</h3>
-
-<p>
-
-"LifeSaver helped me find blood during an emergency."
-
-</p>
-
-</div>
-
-<div class="testimonial-box">
-
-<h3>
-
-Priya Verma
-
-</h3>
-
-<p>
-
-"Very useful and easy to use platform."
-
-</p>
-
-</div>
-
-</section>
-
-<!-- FAQ -->
-
-<section class="faq">
-
-<h2>
-
-Frequently Asked Questions
-
-</h2>
-
-<div class="faq-box">
-
-<h3>
-
-Who can donate blood?
-
-</h3>
-
-<p>
-
-Healthy individuals between 18-65 years can donate blood.
-
-</p>
-
-</div>
-
-<div class="faq-box">
-
-<h3>
-
-Is blood donation safe?
-
-</h3>
-
-<p>
-
-Yes, blood donation is completely safe.
-
-</p>
-
-</div>
-
-</section>
-
-<!-- Footer -->
-
+<!-- FOOTER -->
 <footer>
-
-<div class="footer-content">
-
-<h2>
-
-LifeSaver
-
-</h2>
-
-<p>
-
-Donate Blood, Save Lives
-
-</p>
-
-<div class="social">
-
-<i class="fa-brands fa-facebook"></i>
-
-<i class="fa-brands fa-instagram"></i>
-
-<i class="fa-brands fa-linkedin"></i>
-
-<i class="fa-brands fa-twitter"></i>
-
-</div>
-
-<p>
-
-© 2026 LifeSaver. All Rights Reserved.
-
-</p>
-
-</div>
-
+  <p>© 2026 Lifesaver | Built for Humanity ❤️</p>
 </footer>
 
-<button id="topBtn">
-
-↑
-
-</button>
-
 <script src="script.js"></script>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init({ duration: 1000, once: true });
+</script>
 
 </body>
 </html>
